@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='search.css') }}">
+<div class="card">
+    <div class="card-header" style="background-image: url({{ image_sent }}) " >
+
+
+          <div class="card-header-slanted-edge">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200"><path class="polygon" d="M-20,200,1000,0V200Z" /></svg>
+          </div>
+    </div>
+
+    <div class="card-body">
+        <h2 class="name">{{ title }}</h2>
+        <h4 class="job-title"</h4>
+        <div class="bio">
+            <p>Main actors : {{ actors[0] }}, {{ actors[1] }}, {{ actors[2] }}</p>
+            <p>Genre : {{ genre }}</p>
+            <p>Director : {{ director }}</p>
+            <p>Plot : {{ plot }}</p>
+        </div>
+    </div>
+    <div class="card-footer">
+        <div class="stats">
+            <div class="stat">
+              <span class="label">Year</span> 
+              <span class="value">{{ released }}</span>
+            </div>
+            <div class="stat">
+              <span class="label">Rating</span>
+              <span class="value">{{ rating }}</span>
+            </div>
+            <div class="stat">
+              <span class="label">Runtime (mins)</span>
+              <span class="value">{{ length }}</span>
+            </div>
+            </div>
+        </div>
+    </div>

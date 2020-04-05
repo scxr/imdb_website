@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+
+<ul>
+    <li><a href="/">Search</a></li>
+    <li><a href="/bottom100">Bottom 100</a></li>
+    <li><a href="/top100">Top 100</a></li>
+  </ul>
+<h1 class="logo">
+    <!--This is our logo-->
+    <span class="word1">IMDB</span> 
+    <span class="word2">searcher</span>
+  </h1>
+<div class="form__group field">
+    <form action="searchmovie" method="POST"> <!-- We are posting to our index -->
+    <input type="input" class="form__field" placeholder="Enter Your Movie" name="movie" id='movie' required /> <!-- They must now enter a songid-->
+    <label for="name" class="form__label">Please enter your movie name</label> <!--Nice little request-->
+</div>
+</form>
